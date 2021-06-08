@@ -1,0 +1,51 @@
+<!-- Create a simple Program to build the Calculator in JavaScript using with HTML and CSS web languages. -->  
+<!DOCTYPE html>  
+<html lang = "en">  
+<head>  
+<title> JavaScript Calculator </title>  
+  
+<link rel="stylesheet" type="text/css" href="calculator.css">
+  
+</head>  
+<body>  
+<h1> Calculator </h1>  
+<div class= "formstyle">  
+<form name = "yCalc">  
+      
+    <!-- This input box shows the button pressed by the user in calculator. -->  <b>
+  <input id = "calc" type ="text" name = "answer"> <br> <br>  
+  <!-- Display the calculator button on the screen. -->  
+  <!-- onclick() function display the number prsses by the user. -->  
+  <input type = "button" value = "1" onclick = "yCalc.answer.value += '1' ">  
+  <input type = "button" value = "2" onclick = "yCalc.answer.value += '2' ">  
+  <input type = "button" value = "3" onclick = "yCalc.answer.value += '3' ">  
+   <input type = "button" value = "+" onclick = "yCalc.answer.value += '+' ">  
+  <br> <br>  
+    
+  <input type = "button" value = "4" onclick = "yCalc.answer.value += '4' ">  
+  <input type = "button" value = "5" onclick = "yCalc.answer.value += '5' ">  
+  <input type = "button" value = "6" onclick = "yCalc.answer.value += '6' ">  
+  <input type = "button" value = "-" onclick = "yCalc.answer.value += '-' ">  
+  <br> <br>  
+    
+  <input type = "button" value = "7" onclick = "yCalc.answer.value += '7' ">  
+  <input type = "button" value = "8" onclick = "yCalc.answer.value += '8' ">  
+  <input type = "button" value = "9" onclick = "yCalc.answer.value += '9' ">  
+  <input type = "button" value = "*" onclick = "yCalc.answer.value += '*' ">  
+  <br> <br>  
+    
+    
+  <input type = "button" value = "/" onclick = "yCalc.answer.value += '/' ">  
+  <input type = "button" value = "0" onclick = "yCalc.answer.value += '0' ">  
+    <input type = "button" value = "." onclick = "yCalc.answer.value += '.' ">  
+    <!-- When we click on the '=' button, the onclick() shows the sum results on the calculator screen. -->  
+  <input type = "button" value = "=" onclick = "yCalc.answer.value = eval(yCalc.answer.value) ">  
+  <br>   
+  <!-- Display the Cancel button and erase all data entered by the user. -->  
+  <input type = "button" value = "Clear All" onclick = "yCalc.answer.value = ' ' " id= "clear" >  </b>
+  <br>   
+    
+</form>  
+</div>  
+</body>  
+</html>
